@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --ltCyn: hsl(193, 38%, 86%);
+  --nGrnClr: hsl(150, 100%, 66%);
+  --gryBl: hsl(217, 19%, 38%);
+  --drkGryBl: hsl(217, 19%, 24%);
+  --drkBl: hsl(218, 23%, 16%);
+
+  --mnFnt: "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: var(--drkBl);
+    font-family: var(--mnFnt);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+    width: 32%;
+    background-color: var(--drkGryBl);
+
+    position: relative;
+    border-radius: 10px;
+    height: 350px;
+  }
+
+  h5 {
+    color: var(--nGrnClr);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  p {
+    color: var(--ltCyn);
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border-radius: 50%;
+    width: 4%;
+    height: 56px;
+    background-color: var(--nGrnClr);
+    border: 1px solid var(--nGrnClr);
+
+    position: absolute;
+    bottom: 25%;
+  }
+
+  .btn:hover {
+    box-shadow: 1px 1px 15px var(--nGrnClr);
+  }
+
+  .btn_img {
+    height: 18px;
+  }
+
+  .attribution {
+    margin-top: 3rem;
+    color: var(--ltCyn);
+  }
+  .attribution a {
+    color: red;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: var(--drkBl);
+    font-family: var(--mnFnt);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+    width: 60%;
+    background-color: var(--drkGryBl);
+
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .pattern {
+    display: none;
+  }
+
+  h5 {
+    color: var(--nGrnClr);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  p {
+    color: var(--ltCyn);
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border-radius: 50%;
+    width: 10%;
+    height: 56px;
+    background-color: var(--nGrnClr);
+    border: 1px solid var(--nGrnClr);
+
+    position: absolute;
+    bottom: 25%;
+  }
+
+  .btn:hover {
+    box-shadow: 1px 1px 15px var(--nGrnClr);
+  }
+
+  .btn_img {
+    height: 18px;
+  }
+
+  .attribution {
+    margin-top: 3rem;
+    color: var(--ltCyn);
+  }
+  .attribution a {
+    color: red;
+  }
+}
